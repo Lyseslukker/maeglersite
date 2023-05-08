@@ -1,0 +1,53 @@
+.topBox {
+    display: grid;
+    place-content: center;
+    background-color: #162A41;
+    color: white;
+    height: 3vw;
+}
+
+.topBox__infoBox {
+    width: 80vw;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(6, 1fr);
+}
+.infoBox__contact {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 1/4;
+    place-content: start;
+    column-gap: 1vw;
+}
+
+.infoBox__login {
+    display: grid;
+    grid-column: 4/7;
+    place-content: end;
+}
+.infoBox__login>a {
+    color: white;
+}
+
+
+
+.navigationBox {
+    display: grid;
+    place-content: center;
+}
+
+.navigationBox__nav {
+    width: 80vw;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    height: 5vw;
+}
+.navigationBox__nav>nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+}
+.navigationBox__nav>nav>a {
+    color: black;
+}
