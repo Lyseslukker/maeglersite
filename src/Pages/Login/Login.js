@@ -1,17 +1,16 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import UserContext from '../../Components/UserContext'
 import TokenContext from '../../Components/TokenContext'
 import "./Login.css"
 import TopBanner from '../../Components/TopBanner'
-import Cookies from 'js-cookie'
 
 export default function Login() {
 
   
 
   const { userLogin, setUserLogin } = useContext(UserContext)
-  const { token, setToken } = useContext(TokenContext)
+  const { setToken } = useContext(TokenContext)
 
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);

@@ -1,6 +1,5 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import "./Register.css"
-import UserContext from '../../Components/UserContext'
 
 
 export default function Register() {

@@ -1,9 +1,9 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { useQuery } from '@tanstack/react-query'
 import HouseCard from '../../../Components/HouseCard'
 import "./Home_Chosen.css"
 import { Link } from 'react-router-dom'
-import { motion, stagger } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export default function Home_Chosen() {
 

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import "./Propertydetail.css"
 import { useParams } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'

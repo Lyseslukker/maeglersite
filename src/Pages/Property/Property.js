@@ -1,5 +1,5 @@
-import React, {useState, useEffect, useRef} from 'react'
-import { useQueries, useQuery } from '@tanstack/react-query';
+import React, {useState} from 'react'
+import { useQueries } from '@tanstack/react-query';
 import "./Property.css"
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';

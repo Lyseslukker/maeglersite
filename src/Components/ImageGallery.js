@@ -82,9 +82,6 @@ export default function ImageGallery({imgData, floorplan, myimagestate, setimage
             setMapsStatus(false)
         }
     }
-    const galleryFunction = () => {
-
-    }
     
 
     
@@ -171,6 +168,7 @@ export default function ImageGallery({imgData, floorplan, myimagestate, setimage
                     </div>
                     <div className="imagegallery__mid">
                         <iframe
+                        title="housePlacement"
                         src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d${cords.lat}!2d${cords.long}!3d${cords.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sda!2sdk!4v1684087959995!5m2!1sda!2sdk&zoom=18&maptype=satellite`}
                         style={{width: "600px", height: "450px"}}
                         allowFullScreen={true}

@@ -1,10 +1,9 @@
-import React, {useContext, useEffect, useState} from 'react'
+import React, {useContext, useState} from 'react'
 import "./HouseCard.css"
 import { Link } from 'react-router-dom'
 import EnergyLabel from './EnergyLabel'
 import UserContext from '../Components/UserContext'
 import TokenContext from '../Components/TokenContext'
-import {FaRegHeart, FaHeart} from "react-icons/fa"
 import FavoriteIcon from './FavoriteIcon'
 import { motion } from 'framer-motion'
 
@@ -13,7 +12,7 @@ export default function HouseCard({ data, framerDelay }) {
 
     // CONTEXT
     const { userLogin, setUserLogin } = useContext(UserContext)
-    const { token, setToken } = useContext(TokenContext)
+    const { token } = useContext(TokenContext)
 
     // ROOMS
     const sliced = data.rooms.slice(0, 1)
@@ -26,10 +25,6 @@ export default function HouseCard({ data, framerDelay }) {
     /*=============================================
     =               NOT logged in                 =
     =============================================*/
-    const child = {
-        hidden: {opacity: 0, y: -35},
-        show: {opacity: 1, y: 0}
-    }
     if (userLogin === null) {
         return (
             <motion.div

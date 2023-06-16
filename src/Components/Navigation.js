@@ -13,7 +13,7 @@ import { motion } from 'framer-motion'
 export default function Navigation() {
 
   const {userLogin, setUserLogin } = useContext(UserContext)
-  const {token, setToken } = useContext(TokenContext)
+  const { setToken } = useContext(TokenContext)
 
   const loginHandler = () => {
     Cookies.remove('token')

@@ -13,7 +13,7 @@ export default function Favorite() {
 
   // CONTEXT
   const { userLogin, setUserLogin } = useContext(UserContext)
-  const { token, setToken } = useContext(TokenContext)
+  const { token } = useContext(TokenContext)
 
   const [loading, setLoading] = useState(false);
 

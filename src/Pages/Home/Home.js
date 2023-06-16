@@ -7,8 +7,8 @@ import {HiArrowRight} from "react-icons/hi"
 import {FaGooglePlay} from "react-icons/fa"
 import phoneLeft from "../../Media/phoneLeft.png"
 import phoneRight from "../../Media/phoneRight.png"
-import Home_Chosen from './Home_Chosen/Home_Chosen'
-import Home_Team from './Home_Team/Home_Team'
+import HOME_CHOSEN from './Home_Chosen/Home_Chosen'
+import HOME_TEAM from './Home_Team/Home_Team'
 import { Link } from 'react-router-dom'
 
 export default function Home() {
@@ -103,7 +103,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Home_Chosen />
+      <HOME_CHOSEN />
 
       <section className='home__newsletter'>
         <div className="newsletter__imgBox"></div>
@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Home_Team />
+      <HOME_TEAM />
 
       <section className='home__mobileBanner'>
         {/* LEFT */}

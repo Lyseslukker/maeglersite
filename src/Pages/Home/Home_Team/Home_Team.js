@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import "./Home_Team.css"
 import TeamCard from '../../../Components/TeamCard'
 import { useQuery } from '@tanstack/react-query'
