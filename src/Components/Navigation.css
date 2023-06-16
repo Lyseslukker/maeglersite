@@ -26,6 +26,11 @@
     place-content: end;
 }
 .infoBox__login>a {
+    font-size: 1vw;
+    color: white;
+}
+.infoBox__login>p {
+    font-size: 1vw;
     color: white;
 }
 
@@ -43,10 +48,13 @@
     align-items: center;
     height: 5vw;
 }
+.navigationBox__nav>a {
+    width: 20vw;
+}
 .navigationBox__nav>nav {
     display: grid;
     grid-auto-flow: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .navigationBox__nav>nav>a {
     color: black;

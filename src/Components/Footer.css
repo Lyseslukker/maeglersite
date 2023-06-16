@@ -1,0 +1,134 @@
+.footer {
+    display: grid;
+    padding: 10vw;
+    background-color: #F8F8FB;
+}
+
+.footer__top>img {
+    width: 20vw;
+}
+
+.footer__buttom {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+/* CONTACT */
+.footer__contact {
+    display: grid;
+    row-gap: 3vw;
+    /* margin: 5vw 0; */
+    margin-top: 2.5vw;
+}
+
+/* CONTACT PHONE */
+.contact__phone {
+    display: grid;
+    grid-auto-flow: column;
+
+    grid-template-columns: 1fr 10fr;
+    column-gap: 1vw;
+}
+.contact__phone__logo {
+    display: grid;
+    place-self: center;
+    place-content: center;
+    background-color: #162A41;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    font-size: 1.8vw;
+    color: white;
+}
+.contact__phone__text {
+    display: grid;
+}
+.contact__phone__text>p:first-of-type {
+    align-self: end;
+    font-size: 1vw;
+}
+.contact__phone__text>p:last-of-type {
+    font-weight: 700;
+}
+
+/* CONTACT MAIL */
+.contact__mail {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 10fr;
+    column-gap: 1vw;
+}
+.contact__mail__logo {
+    display: grid;
+    place-content: center;
+    place-self: center;
+    background-color: #162A41;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    font-size: 1.8vw;
+    color: white;
+}
+.contact__mail__text {
+    display: grid;
+}
+.contact__mail__text>p:first-of-type {
+    align-self: end;
+    font-size: 1vw;
+}
+.contact__mail__text>p:last-of-type {
+    font-weight: 700;
+}
+
+/* CONTACT GPS */
+.contact__gps {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 10fr;
+    column-gap: 1vw;
+}
+.contact__gps__logo {
+    display: grid;
+    place-content: center;
+    place-self: center;
+    background-color: #162A41;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    font-size: 1.8vw;
+    color: white;
+}
+.contact__gps__text {
+    display: grid;
+}
+.contact__gps__text>p:first-of-type {
+    align-self: end;
+    font-size: 1vw;
+}
+.contact__gps__text>p:last-of-type {
+    font-weight: 700;
+}
+
+
+/* FOOTER QUICK LINKS */
+.footer__links {
+    display: grid;
+    grid-template-rows: 8fr 10fr;
+}
+
+.links__list {
+    display: grid;
+    row-gap: 1.2vw;
+    color: black;
+}
+.links__list>a { 
+    color: black;
+}
+
+.links__memberOf {
+    align-self: end;
+    color: #7B7B7B;
+}
+.memberOf__a { font-size: 1vw; }
+.memberOf__b { font-size: 3vw; font-weight: 700; }
+.memberOf__c { font-size: 1.2vw; }

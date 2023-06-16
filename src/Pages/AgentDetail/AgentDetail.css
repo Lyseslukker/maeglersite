@@ -1,0 +1,153 @@
+/* LEFT */
+/*=====  BANNER  ======*/
+.agentdetail__topBanner {
+    height: 10vw;
+    display: grid;
+    grid-template-columns: 1/1;
+    grid-template-rows: 1/1;
+}
+.agentdetail__topBanner__text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 5;
+    display: grid;
+    place-content: center;
+}
+.agentdetail__topBanner__text>h1 {
+    font-size: 4vw;
+    color: white;
+}
+.agentdetail__topBanner__imgBox {
+    background-image: linear-gradient(rgba(22, 42, 65, 0.9), rgba(22, 42, 65, 0.9)), url("../../Media/propertyTopBanner.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 5;
+}
+
+
+.agentdetail__general {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    margin: 10vw;
+    column-gap: 2vw;
+}
+
+
+/*=====  AGENT DETAILS  ======*/
+.general__contact {
+    border: solid 1px #D3DEE8;
+}
+
+.contact__topBox {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 2.5vw;
+}
+.topBox__imgBox {
+    height: 15vw;
+    width: 15vw;
+}
+.topBox__info {
+    display: grid;
+}
+
+.info__title {
+    color: #7B7B7B;
+}
+.info__name { align-self: end; }
+.info__phoneBox {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 8fr;
+    align-self: end;
+}
+.info__emailBox {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 8fr;
+}
+
+.contact__midBox {
+    display: grid;
+    row-gap: 0.5vw;
+    padding: 0 2.5vw;
+}
+
+/* FORM */
+.contact__form {
+    margin: 3vw 0;
+    padding: 2.5vw;
+    margin: 2.5vw;
+    border: solid 1px #D3DEE8;
+}
+.form__form {
+    display: grid;
+    row-gap: 1vw;
+}
+.form__nameEmail {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1vw;
+}
+.nameEmail__name { display: grid; }
+.nameEmail__name>input {
+    height: 5vh;
+    padding: 0.5vw;
+    border: solid 1px #D3DEE8;
+}
+.nameEmail__email { display: grid; }
+.nameEmail__email>input {
+    height: 5vh;
+    padding: 0.5vw;
+    border: solid 1px #D3DEE8;
+}
+.form__subject {
+    display: grid;
+}
+.form__subject>input {
+    height: 5vh;
+    padding: 0.5vw;
+    border: solid 1px #D3DEE8;
+}
+.form__message {
+    display: grid;
+}
+.form__message>input {
+    height: 10vh;
+    padding: 0.5vw;
+    border: solid 1px #D3DEE8;
+}
+
+.form__btn {
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    background-color: #162A41;
+    color: white;
+    font-weight: 500;
+}
+
+/* RIGHT */
+/*=====  CALL TO ACTION  ======*/
+.general__extra {
+
+}
+
+.extra__search {
+    border: solid 1px red;
+    height: 20vh;
+    width: 25vw;
+    padding: 2vw;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+}
+.search__inputBox {
+    display: grid;
+    align-content: center;
+}
+.search__inputBox>input {
+    height: 4vh;
+}

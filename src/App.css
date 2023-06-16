@@ -4,14 +4,32 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-color: #162A41;
+  --border-color: #D3DEE8;
+  --gray-font-color: #7B7B7B;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
 
-h1,h2,h3,h4,h5,h6, p {
+h1,h2,h3,h4,h5,h6, p, textarea, label {
   font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
 
 /* 
   font-family: 'Open Sans', sans-serif;
+  300,
+  400,
+  700
 */

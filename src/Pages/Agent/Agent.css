@@ -1,0 +1,36 @@
+.agent__topBanner {
+    height: 10vw;
+    display: grid;
+    grid-template-columns: 1/1;
+    grid-template-rows: 1/1;
+}
+
+.agent__topBanner__text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 5;
+    display: grid;
+    place-content: center;
+}
+.agent__topBanner__text>h1 {
+    font-size: 4vw;
+    color: white;
+}
+
+.agent__topBanner__imgBox {
+    background-image: linear-gradient(rgba(22, 42, 65, 0.9), rgba(22, 42, 65, 0.9)), url("../../Media/propertyTopBanner.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 5;
+}
+
+.agent__all {
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: 1fr;
+    gap: 1vw;
+    padding: 0 10vw;
+    margin: 5vw 0;
+}

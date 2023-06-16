@@ -1,0 +1,127 @@
+/* NOT LOGGED IN */
+.houseCard {
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: 8fr 3fr 2fr;
+    background-color: white;
+    box-shadow: 0px 0px 20px -10px black;
+}
+.houseCard__imgBox {
+    /* background-image: url(); */
+    background-position: center;
+    background-size: cover;
+}
+.houseCard__mid {
+    display: grid;
+    row-gap: 0.6vw;
+    padding: 1vw 1vw;
+    color: black;
+}
+
+
+.houseCard__bot {
+    border-top: solid 1px gray;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 7fr 10fr;
+    align-items: end;
+    /* padding-bottom: 50%; */
+    padding-bottom: 2vw;
+    /* place-items: center; */
+    margin: 0 1vw;
+}
+.houseCard__bot__left {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: end;
+}
+.houseCard__bot__left>span:last-of-type {
+
+}
+.houseCard__bot__right {
+    align-self: end;
+    justify-self: end;
+    color: black;
+}
+.left__energy__A, .left__energy__B, .left__energy__C, .left__energy__D, .left__energy__E, .left__energy__F, .left__energy__G {
+    display: grid;
+    place-content: center;
+    width: 2vw;
+    height: 2vw;
+    color: white;
+}
+.left__energy__A {
+    background-color: #4DB848;
+}
+.left__energy__B {
+    background-color: #4DB848;
+}
+.left__energy__C {
+    background-color: #BED62F;
+}
+.left__energy__D {
+    background-color: #FFF200;
+}
+.left__energy__E {
+    background-color: #FDB813;
+}
+.left__energy__F {
+    background-color: #F36F21;
+}
+.left__energy__G {
+    background-color: #ED1C24;
+}
+
+
+
+
+.left__room {color: black;}
+.left__size {color: black;}
+
+
+/* LOGGED IN */
+.houseCard__imgBox {
+    display: grid;
+    align-content: start;
+    justify-content: end;
+}
+
+.houseCard__imgBox__iconBox {
+    display: grid;
+    place-content: center;
+    padding: 0.8vw;
+    border-radius: 50%;
+    color: var(--main-color);
+    border: solid 1px white;
+    background-color: white;
+    margin: 1vw;
+    font-size: 2vw;
+}
+
+
+/*=============================================
+=                   LOADER                    =
+=============================================*/
+.myIconLoader {
+    /* width: 48px;
+    height: 48px; */
+    width: 2vw;
+    height: 2vw;
+    border: 5px solid #FFF;
+    border-bottom-color: var(--main-color);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: iconrotation 1s linear infinite;
+}
+
+@keyframes iconrotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+

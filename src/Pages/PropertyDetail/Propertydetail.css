@@ -1,0 +1,106 @@
+/* HIDE AND SHOW IMGGALLERY */
+#imgHide {
+    display: none;
+}
+
+.propertydetail__heroBox {
+    height: 45vw;
+}
+
+/* TOP OVERVIEW */
+.propertydetail__topOverview {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0 10vw;
+    justify-content: space-between;
+    padding: 2vw 10vw;
+    align-items: center;
+}
+
+.topOverview__left {
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.topOverview__left__grouped {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    column-gap: 1vw;
+}
+
+.topOverview__mid {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2vw;
+}
+.topOverview__mid__logo {
+    font-size: 2.8vw;
+    color: #7B7B7B;
+}
+
+.topOverview__right {
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+
+/* HOUSE DETAILS */
+.propertydetail__houseDetails {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding: 2vw 10vw;
+}
+
+.houseDetails__left, .houseDetails__mid, .houseDetails__right {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2vw;
+}
+
+/* LEFT */
+.left__divider {
+    
+}
+
+/* MID */
+.mid__divider {
+
+}
+
+/* RIGHT */
+.right__divider {
+
+}
+
+
+/* ABOUT */
+.propertydetail__about {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 5vw 10vw;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3vw;
+}
+
+
+/* AGENT */
+.agent__infoBox {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    column-gap: 2vw;
+    border: solid 1px #7B7B7B;
+    padding: 2vw;
+}
+.agent__infoBox__text>p {
+    padding: 0.5vw 0;
+}
+.infoBox__text__name {}
+.infoBox__text__title {
+    color: #7B7B7B;
+}
+.infoBox__text__phone {}
+.infoBox__text__email {}

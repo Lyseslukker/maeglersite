@@ -1,0 +1,85 @@
+.property__topBanner {
+    height: 10vw;
+    display: grid;
+    grid-template-columns: 1/1;
+    grid-template-rows: 1/1;
+}
+
+.property__topBanner__text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 5;
+    display: grid;
+    place-content: center;
+}
+.property__topBanner__text>h1 {
+    font-size: 4vw;
+    color: white;
+}
+
+.property__topBanner__imgBox {
+    background-image: linear-gradient(rgba(22, 42, 65, 0.9), rgba(22, 42, 65, 0.9)), url("../../Media/propertyTopBanner.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 5;
+}
+
+
+.formSearch__input {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 20vw 20vw;
+    column-gap: 2vw;
+    padding-right: 5vw;
+}
+
+/* FORM SEARCH */
+.property__formSearch {
+    margin: 0 10vw;
+}
+.property__formSearch>h2 {
+    text-align: left;
+    margin: 2vw 0;
+    margin-top: 5vw;
+    font-size: 2vw;
+}
+
+/* EJENDOMSTYPE */
+.input__ejendomstype {
+    display: grid;
+}
+
+.input__pris {
+    display: grid;
+}
+
+.pris__fromTo {
+    display: grid;
+    grid-auto-flow: column;
+}
+.pris__fromTo>p:last-of-type {
+    justify-self: end;
+}
+
+
+.property__houses {
+    padding: 5vw 10vw;
+    min-height: 35vw;
+}
+/* LOADING */
+.property__houses__loading {
+    display: grid;
+    place-content: center;
+    margin: 10vw 0;
+}
+
+
+/*=====  SLIDER  ======*/
+
+.pris__slider {
+    max-width: 20vw;
+}
+
+/*=====  SLIDER  ======*/

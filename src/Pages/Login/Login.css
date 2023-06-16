@@ -1,0 +1,142 @@
+
+/*=============================================
+=            LOADER            =
+=============================================*/
+.myLoader {
+    height: 20vh;
+    display: grid;
+    place-content: center;
+}
+
+.loader {
+    animation: rotate 1s infinite;
+    height: 50px;
+    width: 50px;
+  }
+
+  .loader:before,
+  .loader:after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+  }
+  .loader:before {
+    animation: ball1 1s infinite;
+    background-color: #fff;
+    box-shadow: 30px 0 0 var(--main-color);
+    margin-bottom: 10px;
+  }
+  .loader:after {
+    animation: ball2 1s infinite;
+    background-color: var(--main-color);
+    box-shadow: 30px 0 0 #fff;
+  }
+
+  @keyframes rotate {
+    0% { transform: rotate(0deg) scale(0.8) }
+    50% { transform: rotate(360deg) scale(1.2) }
+    100% { transform: rotate(720deg) scale(0.8) }
+  }
+
+  @keyframes ball1 {
+    0% {
+      box-shadow: 30px 0 0 var(--main-color);
+    }
+    50% {
+      box-shadow: 0 0 0 var(--main-color);
+      margin-bottom: 0;
+      transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 var(--main-color);
+      margin-bottom: 10px;
+    }
+  }
+
+  @keyframes ball2 {
+    0% {
+      box-shadow: 30px 0 0 #fff;
+    }
+    50% {
+      box-shadow: 0 0 0 #fff;
+      margin-top: -20px;
+      transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #fff;
+      margin-top: 0;
+    }
+  }
+  
+
+/*=====  End of LOADER  ======*/
+
+.forkertLogin {
+    color: red;
+}
+
+
+.login {
+    display: grid;
+    place-items: center;
+}
+
+.login__loginBox {
+    border: solid 0.5px #D3DEE8;
+    padding: 0 5vw;
+    margin: 10vw 0;
+    height: 50vw;
+    width: 60vw;
+}
+.login__loginBox>h1 {
+    font-size: 2vw;
+    text-align: center;
+    margin: 3vw 0;
+}
+
+/* FORM */
+.loginBox__form {
+    display: grid;
+}
+.loginBox__form>label {
+    margin-top: 1vw;
+}
+.loginBox__form>input {
+    height: 3.5vw;
+    margin-top: 0.5vw;
+    border-radius: 0.2rem;
+    border: solid #D3DEE8 0.5px;
+    padding: 0 1vw;
+}
+.loginBox__form>button {
+    margin-top: 2vw;
+    border: none;
+    height: 3.5vw;
+    background-color: #162A41;
+    color: white;
+    border-radius: 0.2rem;
+}
+
+/* SoMe BUTTONS */
+.loginBox__SoMe>p {
+    margin: 1vw 0;
+}
+.SoMe__btns {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+.SoMe__btns__btn {
+    color: white;
+    border: none;
+    width: 15vw;
+    height: 5vh;
+}
+
+.loginBox__signup {
+    text-align: center;
+    margin: 3vw 0;
+}
+

@@ -1,0 +1,28 @@
+.homeTeam {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: 10vw 0;
+}
+
+.homeTeam__team {
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: 1fr;
+    column-gap: 1vw;
+    padding: 0 10vw;
+    margin: 5vw 0;
+}
+.homeTeam__btn {
+    display: grid;
+    place-content: center;
+    place-self: center;
+    width: 10vw;
+    border: none;
+    height: 4vw;
+    width: 15vw;
+    background-color: #162A41;
+    color: white;
+    border-radius: 0.2rem;
+    font-size: 1vw;
+}

@@ -1,7 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import "./Register.css"
+import UserContext from '../../Components/UserContext'
+
 
 export default function Register() {
-  return (
-    <div>RegisterPage</div>
-  )
+
+    return (
+        <h1>This is register page.</h1>
+    )
+
 }
