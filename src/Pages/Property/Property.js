@@ -6,7 +6,6 @@ import 'rc-slider/assets/index.css';
 import FilteredPropertys from './Components/FilteredPropertys';
 import logo from "../../Media/logo.svg"
 import TopBanner from '../../Components/TopBanner';
-import { motion } from 'framer-motion';
 
 export default function Property() {
 
