@@ -120,12 +120,6 @@
     grid-template-rows: 1fr 1px 1fr 1px 1fr;
     row-gap: 1vw;
     padding: 1.5vw;
-
-    /* & > hr {
-        width: 80%;
-        justify-self: center;
-        align-self: center;
-    } */
 }
 
 .mid__info__card {

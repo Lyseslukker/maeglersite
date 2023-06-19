@@ -3,6 +3,7 @@ import "./AgentDetail.css"
 import { useQuery } from '@tanstack/react-query'
 import { useParams } from 'react-router-dom'
 import {FaPhoneAlt, FaPaperPlane} from "react-icons/fa"
+import { motion } from 'framer-motion'
 
 export default function AgentDetail() {
 
@@ -38,7 +39,12 @@ export default function AgentDetail() {
   }
   if (data) {
     return (
-      <article className='agentdetail'>
+      <motion.article 
+      initial={{opacity: 0, x: -10}}
+      animate={{opacity: 1, x: 0}}
+      exit={{opacity: 0}}
+      transition={{easings: ["easeIn", "easeOut"], duration: 0.2}}
+      className='agentdetail'>
         <section className="agentdetail__topBanner">
           <div className="agentdetail__topBanner__imgBox"></div>
           <div className="agentdetail__topBanner__text">
@@ -129,7 +135,7 @@ export default function AgentDetail() {
             </div>
           </div>
         </section>
-      </article>
+      </motion.article>
     )
   }
 }

@@ -10,12 +10,18 @@ import phoneRight from "../../Media/phoneRight.png"
 import HOME_CHOSEN from './Home_Chosen/Home_Chosen'
 import HOME_TEAM from './Home_Team/Home_Team'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 export default function Home() {
 
 
   return (
-    <article className='home'>
+    <motion.article 
+    initial={{opacity: 0, x: -10,}}
+    animate={{opacity: 1, x: 0}}
+    exit={{opacity: 0}}
+    transition={{easings: ["easeIn", "easeOut"], duration: 0.2}}
+    className='home'>
 
       {/* HERO */}
       <section className='home__hero'>
@@ -135,6 +141,6 @@ export default function Home() {
         </div>
       </section>
 
-    </article>
+    </motion.article>
   )
 }

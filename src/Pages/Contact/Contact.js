@@ -3,6 +3,7 @@ import "./Contact.css"
 import TopBanner from '../../Components/TopBanner'
 import {BsTelephoneFill} from "react-icons/bs"
 import {FaPaperPlane,FaMapMarkerAlt} from "react-icons/fa"
+import { motion } from 'framer-motion'
 
 
 export default function Contact() {
@@ -24,7 +25,12 @@ export default function Contact() {
 
 
   return (
-    <section className='contact'>
+    <motion.section 
+    initial={{opacity: 0, x: -10,}}
+    animate={{opacity: 1, x: 0}}
+    exit={{opacity: 0}}
+    transition={{easings: ["easeIn", "easeOut"], duration: 0.2}}
+    className='contact'>
       <TopBanner title="Kontakt os" size="reg" />
 
       <div className="contact__mid">
@@ -108,6 +114,6 @@ export default function Contact() {
 
       
 
-    </section>
+    </motion.section>
   )
 }

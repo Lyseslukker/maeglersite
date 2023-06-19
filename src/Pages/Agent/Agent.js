@@ -3,6 +3,7 @@ import "./Agent.css"
 import { useQuery } from '@tanstack/react-query'
 import TeamCard from '../../Components/TeamCard'
 import TopBanner from '../../Components/TopBanner'
+import { motion } from 'framer-motion'
 
 export default function Agent() {
 
@@ -22,7 +23,12 @@ export default function Agent() {
   }
   if (data) {
     return (
-      <article className='agent'>
+      <motion.article 
+      initial={{opacity: 0, x: -10}}
+      animate={{opacity: 1, x: 0}}
+      exit={{opacity: 0}}
+      transition={{easings: ["easeIn", "easeOut"], duration: 0.2}}
+      className='agent'>
         <TopBanner title="Medarbejdere i Roskilde" size="reg" />
   
         <section className='agent__all'>
@@ -32,7 +38,7 @@ export default function Agent() {
             )
           })}
         </section>
-      </article>
+      </motion.article>
     )
   }
 

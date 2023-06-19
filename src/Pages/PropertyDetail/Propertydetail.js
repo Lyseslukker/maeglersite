@@ -6,6 +6,7 @@ import {AiOutlinePicture} from "react-icons/ai"
 import {FaPhoneAlt, FaPaperPlane} from "react-icons/fa"
 import {IoLayersOutline, IoLocationOutline, IoHeartOutline} from "react-icons/io5"
 import ImageGallery from '../../Components/ImageGallery'
+import { motion } from 'framer-motion'
 
 export default function Propertydetail() {
   // TAKES QUERY FROM URL
@@ -60,7 +61,12 @@ export default function Propertydetail() {
     }
 
     return (
-      <article className='propertydetail'>
+      <motion.article 
+      initial={{opacity: 0, x: -10,}}
+      animate={{opacity: 1, x: 0}}
+      exit={{opacity: 0}}
+      transition={{easings: ["easeIn", "easeOut"], duration: 0.2}}
+      className='propertydetail'>
         {/* HERO IMG */}
         <section className="propertydetail__heroBox"
           style={{
@@ -164,7 +170,7 @@ export default function Propertydetail() {
 
         <ImageGallery imgData={data.images} floorplan={data.floorplan.url} myimagestate={imgGalleryStatus} setimagestate={setImgGalleryStatus} cords={cordinates} />
 
-      </article>
+      </motion.article>
     )
   }
 

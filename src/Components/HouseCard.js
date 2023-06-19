@@ -28,9 +28,10 @@ export default function HouseCard({ data, framerDelay }) {
     if (userLogin === null) {
         return (
             <motion.div
-            initial={{opacity: 0, rotate: -30, y: -10}}
-            animate={{opacity: 1, rotate: 0, y: 0}}
+            initial={{opacity: 0, x: -10}}
+            animate={{opacity: 1, x: 0}}
             transition={{ duration: 0.1, delay: framerDelay * 0.1}}
+            viewport={{once: true}}
             >
                 <Link to={`/propertydetail/${data.id}`} className='houseCard'>
                     <div style={{backgroundImage: `url(${data.images[0].formats.thumbnail.url})`}} className="houseCard__imgBox">

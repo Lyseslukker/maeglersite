@@ -17,6 +17,7 @@ import Error from "./Pages/Error/Error"
 import UserContext from "./Components/UserContext"
 import TokenContext from "./Components/TokenContext"
 
+// FAMER MOTION
 import { AnimatePresence } from "framer-motion"
 
 function App() {

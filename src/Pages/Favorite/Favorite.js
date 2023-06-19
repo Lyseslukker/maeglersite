@@ -7,6 +7,8 @@ import {BiSearch} from "react-icons/bi"
 import TopBanner from '../../Components/TopBanner'
 import { Link } from 'react-router-dom'
 import EnergyLabel from '../../Components/EnergyLabel'
+import { motion } from 'framer-motion'
+
 
 
 export default function Favorite() {
@@ -60,7 +62,12 @@ export default function Favorite() {
   // NOT LOGGED IN
   if (userLogin === null) {
     return (
-      <section className='register'>
+      <motion.section 
+      initial={{opacity: 0, x: -10,}}
+      animate={{opacity: 1, x: 0}}
+      exit={{opacity: 0}}
+      transition={{easings: ["easeIn", "easeOut"], duration: 0.2}}
+      className='register'>
         <TopBanner title="Mine Favoritboliger" size="reg" />
         <div className="register__warning">
           <div className="warning__box">
@@ -73,8 +80,7 @@ export default function Favorite() {
             <Link to="/register" className='resolve__btn resolve__signup'>Opret bruger</Link>
           </div>
         </div>
-
-      </section>
+      </motion.section>
     )
   }
 
@@ -83,7 +89,12 @@ export default function Favorite() {
     console.log(userLogin.homes)    
     
     return (
-      <section className='favoriteHomes'>
+      <motion.section 
+      initial={{opacity: 0, x: -10,}}
+      animate={{opacity: 1, x: 0}}
+      exit={{opacity: 0}}
+      transition={{easings: ["easeIn", "easeOut"], duration: 0.2}}
+      className='favoriteHomes'>
         <TopBanner title="Mine favoritboliger" size="reg" />
 
         <form onSubmit={searchFormDeny} className='favoriteHomes__form'>
@@ -139,7 +150,7 @@ export default function Favorite() {
             )
           })}
         </div>
-      </section>
+      </motion.section>
     )
   }
 }

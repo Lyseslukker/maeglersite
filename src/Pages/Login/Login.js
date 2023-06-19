@@ -4,6 +4,8 @@ import UserContext from '../../Components/UserContext'
 import TokenContext from '../../Components/TokenContext'
 import "./Login.css"
 import TopBanner from '../../Components/TopBanner'
+import { motion } from 'framer-motion'
+
 
 export default function Login() {
 
@@ -114,7 +116,12 @@ export default function Login() {
     }
     else {
       return (
-        <div className='login'>
+        <motion.div 
+        initial={{opacity: 0, x: -10,}}
+        animate={{opacity: 1, x: 0}}
+        exit={{opacity: 0}}
+        transition={{easings: ["easeIn", "easeOut"], duration: 0.2}}
+        className='login'>
   
           <TopBanner title="Login" size="big" inout="Login" />
   
@@ -146,7 +153,7 @@ export default function Login() {
             </div>
   
           </div>
-        </div>
+        </motion.div>
       )
     }
   }
